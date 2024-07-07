@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background"
+        app:layout_constraintBottom_toTopOf="@+id/emergency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="235dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/inter_extrabold"
+            android:gravity="center"
+            android:text="Pharmatica  "
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_light"
+            android:text="First Time To Sign in "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="260dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/plain_text_figure"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/inter_bold"
+            android:hint="Please Enter your number "
+            android:maxLength="11"
+            android:paddingStart="40dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.61"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="314dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/plain1"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:hint="OTP"
+            android:maxLength="6"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="279dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="220dp"
+            android:backgroundTint="#DF2935"
+            android:fontFamily="@font/inter_bold"
+            android:onClick="movetocat"
+            android:text="Sendotp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/gointo"
+            android:layout_width="279dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="132dp"
+            android:backgroundTint="#DF2935"
+            android:fontFamily="@font/inter_bold"
+            android:onClick="move"
+            android:text="Enter"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/plus20"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="+20"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="279dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#DF2935"
+        android:fontFamily="@font/inter_bold"
+        android:onClick="movetocat"
+        android:text="Call emergency"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

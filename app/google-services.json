@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "616578789839",
+    "project_id": "pharmatica-995c1",
+    "storage_bucket": "pharmatica-995c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616578789839:android:b8c2bedce6dafe306f22ba",
+        "android_client_info": {
+          "package_name": "com.example.pharmatica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoewf9odiRLk5UZgWn_uHDKU2w3ivZltU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
